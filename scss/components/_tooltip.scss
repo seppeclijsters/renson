@@ -1,0 +1,24 @@
+.has-tip {
+  border-bottom: none;
+}
+
+.tooltip {
+  box-shadow: $shadow;
+}
+
+@media only screen and (max-width: 640px)  {
+
+  .tooltip {
+      position: absolute;
+      top: calc(100% + 0rem);
+      left: 10px !important;
+      z-index: 1200;
+      max-width: calc(100% - 20px);
+      padding: .75rem;
+      border-radius: 0;
+      background-color: #fff;
+      font-size: 80%;
+      color: #000;
+  }
+
+}

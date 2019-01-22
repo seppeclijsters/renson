@@ -1,0 +1,32 @@
+.nieuwsbrief__list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  & .nieuwsbrief__list__item {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+
+    & .nieuwsbrief__list__item__icon {
+      background-image: url(../assets/svg/vink.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.nieuwsbrief__button-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 640px)  {
+  .nieuwsbrief__list {
+    flex-direction: column;
+  }
+}

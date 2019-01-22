@@ -1,13 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+
 @charset 'utf-8';
 
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
 
+
 @include foundation-global-styles;
 // @include foundation-grid;
-// @include foundation-flex-grid;
-@include foundation-xy-grid-classes;
+@include foundation-flex-grid;
+// @include foundation-xy-grid-classes;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -50,3 +55,36 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+@import 'reset';
+@import 'all'; // css fontawesome
+@import 'default-skin';// css for Photoswiper (lightbox)
+@import 'main';
+
+
+// Vendors
+@import 'vendors/rangeslider'; // css for rangeslider plugin
+
+@import 'variables';
+
+// Components
+@import 'components/page-info';
+@import 'components/tooltip';
+@import 'components/headers';
+
+// Layout
+@import 'layout/nieuwsbrief';
+
+// Pages
+@import 'pages/dealer';
+@import 'pages/nieuwsbrief';
+@import 'pages/designlijn';
+@import 'pages/about';
+@import 'pages/blog';
+@import 'pages/contact';
+
+@import 'inspiration';
+@import 'product_overview';
+@import 'product_detail';
+@import 'style';

@@ -1,0 +1,238 @@
+.discover {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  background-image: url(../assets/images/antiloop_2560x1709.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover__toplayer {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 39, 91);
+  background-color: rgba(0, 39, 91, 0.8);
+}
+
+.discover__button {
+  position: relative;
+  z-index: 2;
+  background-color: inherit;
+}
+
+.button-style3 {
+  position: relative;
+  z-index: 2;
+}
+
+.why-renson__item {
+  cursor: pointer;
+}
+
+.selected-item {
+  background-color: $blue !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
+
+  & .why-renson__item__title {
+    color: white !important;
+  }
+
+  & .why-renson__item__text {
+    color: white !important;
+  }
+
+  & svg g {
+    fill: white;
+  }
+
+  & .svg__stroke g {
+    fill: $blue;
+    stroke: white;
+  }
+
+  .why-renson__item__button a {
+    color: white;
+  }
+}
+
+.why-renson__product__title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 32px;
+  color: #000000;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.about__swiper__pagination-container {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__swiper {
+  margin-top: 110px;
+}
+
+.about__swiper__navigation {
+  position: relative;
+
+
+  & .about__swiper__prev {
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    left: -90px;
+    top: -225px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & i {
+      font-size: 30px;
+      color: $blue;
+    }
+  }
+
+  & .about__swiper__next {
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: -90px;
+    top: -225px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & i {
+      font-size: 30px;
+      color: $blue;
+    }
+  }
+}
+
+.about__swiper__pagination {
+
+  & .swiper-pagination-bullet {
+    margin: 0 4px;
+    outline: none;
+  }
+
+  & .swiper-pagination-bullet-active {
+    background: $blue;
+    outline: none;
+  }
+}
+
+.about__swiper__pagination-container .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    display: inline-block !important;
+}
+
+.slide__about {
+  width: 100%;
+  height: 400px;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.questions-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $blue;
+}
+
+.questions {
+  background-color: $blue;
+  width: 100%;
+
+  & .questions__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+    margin-bottom: 15px;
+  }
+
+  & .questions__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+  }
+}
+
+.questions__button {
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1024px)  {
+
+  .about__swiper__navigation {
+
+    & .about__swiper__prev {
+      left: -70px;
+    }
+
+    & .about__swiper__next {
+      right: -70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px)  {
+
+  .questions-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .questions__button {
+    margin-top: 40px;
+  }
+
+  .about__swiper__navigation {
+
+    & .about__swiper__prev {
+      top: 7px;
+      left: 0px;
+    }
+
+    & .about__swiper__next {
+      top: 7px;
+      right: 0px;
+    }
+
+  }
+
+  .slide__about {
+    height: 150px;
+  }
+
+
+}

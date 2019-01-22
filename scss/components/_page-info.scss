@@ -1,0 +1,35 @@
+.page-info {
+
+    & .page-info__title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: lighter;
+      color: #000000;
+      line-height: 41px;
+    }
+
+    & h2 {
+      margin: 0;
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: lighter;
+    }
+
+    & .page-info__text {
+      margin-top: 25px;
+      font-size: 16px;
+      color: #000000;
+      letter-spacing: 0.5px;
+      line-height: 26px;
+    }
+
+    & .page-info__subtitle {
+      margin-bottom: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: lighter;
+      font-size: 29px;
+      color: #000000;
+      letter-spacing: 0.23px;
+      text-align: left !important;
+    }
+
+}

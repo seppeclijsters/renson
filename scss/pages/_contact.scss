@@ -1,0 +1,14 @@
+.contact__title {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.contact__adres {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .contact__title {
+    font-size: 25px;
+  }
+}

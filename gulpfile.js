@@ -27,7 +27,8 @@ function serve() {
     server: "./"
   });
 
-  gulp.watch("scss/*.scss", sass);
+  // gulp.watch("scss/*.scss", sass);
+  gulp.watch("scss/**/*.scss", sass);
   gulp.watch("*.html").on('change', browserSync.reload);
 }
 
